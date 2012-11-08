@@ -1,0 +1,23 @@
+$font-size: 16; // Ideal body copy font-size
+
+// Scales to increase/decrease the font-size with
+$perfect-fourth: 1.333;
+$perfect-fifth: 1.5;
+$golden-section: 1.618;
+
+// Pick a scale
+$scale: $perfect-fourth;
+
+// Font sizes
+$s: $font-size; // Small as base for body copy
+
+$xs: round($s / $scale);
+$xxs: round($xs / $scale);
+
+$m: round($s * $scale);
+$l: round($m * $scale);
+$xl: round($l * $scale);
+$xxl: round($xl * $scale);
+$xxxl: round($xxl * $scale);
+$xxxxl: round($xxxl * $scale);
+$xxxxxl: round($xxxxl * $scale);
