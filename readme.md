@@ -9,7 +9,7 @@ ModularScale is an scss file to make composing your type to a scale easy. It's j
 
 2. Set your body copy font-size in the `$font-size` variable (default is 16)
 
-3. Choose a scale by setting te `$scale` variable to `$perfect-fourth` | `$perfect-fifth` | `$golden-section` (default is `$perfect-fifth`, `$perfect-fourth` are more subtle increments in size, `$golden-section` are more drastic increments.)
+3. Choose a scale by setting te `$scale` variable to `$perfect-fourth` | `$perfect-fifth` | `$golden-section` (default is `$perfect-fifth`. `$perfect-fourth` are more subtle increments in size, `$golden-section` are more drastic increments.)
 
 4. Set your type using the `$xxs` to `$xxxxxl` variables (e.g. `body{font-size: $s + px}`) (`$s` is the one for your body copy)
 
