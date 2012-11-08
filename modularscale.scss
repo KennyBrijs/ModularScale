@@ -8,16 +8,21 @@ $golden-section: 1.618;
 // Pick a scale
 $scale: $perfect-fifth;
 
-// Font sizes
+// Calculate font sizes according to selected scale
 $s: $font-size; // Small as base for body copy
 
-$xs: round($s / $scale);
+$xs: round($s / $scale); // Smaller sizes
 $xxs: round($xs / $scale);
 
-$m: round($s * $scale);
+$m: round($s * $scale); // Larger sizes
 $l: round($m * $scale);
 $xl: round($l * $scale);
 $xxl: round($xl * $scale);
 $xxxl: round($xxl * $scale);
 $xxxxl: round($xxxl * $scale);
 $xxxxxl: round($xxxxl * $scale);
+
+@mixin font-size($size: $font-size){ // Set font-size
+	font-size: $size + px; // px fallback for old browsers
+	font-size: $size / $font-size + rem; // rem unit (http://snook.ca/archives/html_and_css/font-size-with-rem)
+}

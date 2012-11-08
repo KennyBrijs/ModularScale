@@ -11,7 +11,7 @@ ModularScale is an scss file to make composing your type to a scale easy. It's j
 
 3. Choose a scale by setting te `$scale` variable to `$perfect-fourth` | `$perfect-fifth` | `$golden-section` (default is `$perfect-fifth`. `$perfect-fourth` are more subtle increments in size, `$golden-section` are more drastic increments.)
 
-4. Set your type using the `$xxs` to `$xxxxxl` variables (e.g. `body{font-size: $s + px}`) (`$s` is the one for your body copy)
+4. Set your type using the the `font-size()` mixin with `$xxs` to `$xxxxxl` variables (e.g. `h1{ @include font-size($xxl);}`) (`$s` is default size for body copy)
 
 	1. `$xxs`
 	2. `$xs`
@@ -23,5 +23,3 @@ ModularScale is an scss file to make composing your type to a scale easy. It's j
 	8. `$xxxl`
 	9. `$xxxxl`
 	10. `$xxxxxl`
-
-Currently you still have to add ` + px` after the variable, a mixin that will automatically set type with `rem` values *and* a px fallback is coming **very very** soon.
