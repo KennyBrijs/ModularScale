@@ -28,24 +28,11 @@ ModularScale is an scss file to make composing your type to a scale easy. It's j
 
 5. If you want, you can also use an “important number” for more variation in you scale. Again, check Tim Brown's presentation for more info on the subject.
 
-	““If you want to mix font families, … adjust the sizes so that the x-heights aling.” - Thinking With Type
+	“If you want to mix font families, […] adjust the sizes so that the x-heights aling.” - Thinking With Type
 
 	So ideally, you would check which font size makes the x-height of your alternate font (e.g. the one you use for titles) match with the x-height of your body copy, and enter that as important number:
 
 	e.g. `$important-number: 23;` (default is 0)
 
-	Now you can access this scale through the variables
-
-	1. `$ixxs`
-	2. `$ixs`
-	3. `$is`
-	4. `$im`
-	5. `$il`
-	6. `$ixl`
-	7. `$ixxl`
-	8. `$ixxxl`
-	9. `$ixxxxl`
-	10. `$ixxxxxl`
-
-	with the “i” standing for “important number.”
+	Now you can access this scale through the variables `$ixxs`, `$ixs`, `$is`, `$im`, `$il`, `$ixl`, `$ixxl`, `$ixxxl`, `$ixxxxl` and `$ixxxxxl` with the “i” standing for “important number.”
 
