@@ -1,4 +1,5 @@
-$font-size: 16; // Body copy font-size
+$font-size: 16; // Ideal font-size for body copy
+$important-number: 0; // Ideal font size for alternate font (e.g. font-size where x-height of alternate font is the same as x-height of body copy at ideal font-size)
 
 // Scales to increase/decrease the font-size with
 $perfect-fourth: 1.333;
@@ -21,6 +22,20 @@ $xxl: round($xl * $scale);
 $xxxl: round($xxl * $scale);
 $xxxxl: round($xxxl * $scale);
 $xxxxxl: round($xxxxl * $scale);
+
+// Calculate alternate sizes ($ixxl = $important_number_xxl)
+$is: $important-number; // Small as base
+
+$ixs: round($is / $scale); // Smaller sizes
+$ixxs: round($ixs / $scale);
+
+$im: round($is * $scale); // Larger sizes
+$il: round($im * $scale);
+$ixl: round($il * $scale);
+$ixxl: round($ixl * $scale);
+$ixxxl: round($ixxl * $scale);
+$ixxxxl: round($ixxxl * $scale);
+$ixxxxxl: round($ixxxxl * $scale);
 
 @mixin font-size($size: $font-size){ // Set font-size
 	font-size: $size + px; // px fallback for old browsers
